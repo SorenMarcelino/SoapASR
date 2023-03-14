@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4511999529BF9B3B00CA7FA1 /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = 4511999429BF9B3B00CA7FA1 /* Swifter */; };
 		45E6A27429B74622004D5271 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E6A27329B74622004D5271 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		45E6A27029B74622004D5271 /* ASR */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ASR; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E6A27329B74622004D5271 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		45E6A27B29B8A55C004D5271 /* AntoineDanielASRTestPart.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AntoineDanielASRTestPart.mp3; sourceTree = "<group>"; };
+		45E6A27C29B8A773004D5271 /* MacronASRTestPart.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MacronASRTestPart.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4511999529BF9B3B00CA7FA1 /* Swifter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				45E6A27329B74622004D5271 /* main.swift */,
+				45E6A27B29B8A55C004D5271 /* AntoineDanielASRTestPart.mp3 */,
+				45E6A27C29B8A773004D5271 /* MacronASRTestPart.mp3 */,
 			);
 			path = ASR;
 			sourceTree = "<group>";
@@ -78,6 +84,9 @@
 			dependencies = (
 			);
 			name = ASR;
+			packageProductDependencies = (
+				4511999429BF9B3B00CA7FA1 /* Swifter */,
+			);
 			productName = ASR;
 			productReference = 45E6A27029B74622004D5271 /* ASR */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +115,9 @@
 				Base,
 			);
 			mainGroup = 45E6A26729B74622004D5271;
+			packageReferences = (
+				4511999329BF9B3B00CA7FA1 /* XCRemoteSwiftPackageReference "swifter" */,
+			);
 			productRefGroup = 45E6A27129B74622004D5271 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -244,6 +256,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ATL5R5VHCG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -253,6 +266,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ATL5R5VHCG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -280,6 +294,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4511999329BF9B3B00CA7FA1 /* XCRemoteSwiftPackageReference "swifter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/httpswift/swifter.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4511999429BF9B3B00CA7FA1 /* Swifter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4511999329BF9B3B00CA7FA1 /* XCRemoteSwiftPackageReference "swifter" */;
+			productName = Swifter;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 45E6A26829B74622004D5271 /* Project object */;
 }
