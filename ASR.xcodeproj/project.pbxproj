@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4511999529BF9B3B00CA7FA1 /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = 4511999429BF9B3B00CA7FA1 /* Swifter */; };
 		45E6A27429B74622004D5271 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E6A27329B74622004D5271 /* main.swift */; };
+		45EF348929C2341700DCDAFC /* Kitura in Frameworks */ = {isa = PBXBuildFile; productRef = 45EF348829C2341700DCDAFC /* Kitura */; };
+		45EF348B29C2496F00DCDAFC /* XMLDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EF348A29C2496F00DCDAFC /* XMLDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,7 @@
 		45E6A27329B74622004D5271 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		45E6A27B29B8A55C004D5271 /* AntoineDanielASRTestPart.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AntoineDanielASRTestPart.mp3; sourceTree = "<group>"; };
 		45E6A27C29B8A773004D5271 /* MacronASRTestPart.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MacronASRTestPart.mp3; sourceTree = "<group>"; };
+		45EF348A29C2496F00DCDAFC /* XMLDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45EF348929C2341700DCDAFC /* Kitura in Frameworks */,
 				4511999529BF9B3B00CA7FA1 /* Swifter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				45E6A27329B74622004D5271 /* main.swift */,
+				45EF348A29C2496F00DCDAFC /* XMLDelegate.swift */,
 				45E6A27B29B8A55C004D5271 /* AntoineDanielASRTestPart.mp3 */,
 				45E6A27C29B8A773004D5271 /* MacronASRTestPart.mp3 */,
 			);
@@ -86,6 +91,7 @@
 			name = ASR;
 			packageProductDependencies = (
 				4511999429BF9B3B00CA7FA1 /* Swifter */,
+				45EF348829C2341700DCDAFC /* Kitura */,
 			);
 			productName = ASR;
 			productReference = 45E6A27029B74622004D5271 /* ASR */;
@@ -117,6 +123,7 @@
 			mainGroup = 45E6A26729B74622004D5271;
 			packageReferences = (
 				4511999329BF9B3B00CA7FA1 /* XCRemoteSwiftPackageReference "swifter" */,
+				45EF348729C2341600DCDAFC /* XCRemoteSwiftPackageReference "Kitura" */,
 			);
 			productRefGroup = 45E6A27129B74622004D5271 /* Products */;
 			projectDirPath = "";
@@ -132,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45EF348B29C2496F00DCDAFC /* XMLDelegate.swift in Sources */,
 				45E6A27429B74622004D5271 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +312,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		45EF348729C2341600DCDAFC /* XCRemoteSwiftPackageReference "Kitura" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Kitura/Kitura";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -311,6 +327,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4511999329BF9B3B00CA7FA1 /* XCRemoteSwiftPackageReference "swifter" */;
 			productName = Swifter;
+		};
+		45EF348829C2341700DCDAFC /* Kitura */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 45EF348729C2341600DCDAFC /* XCRemoteSwiftPackageReference "Kitura" */;
+			productName = Kitura;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
